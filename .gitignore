@@ -1,0 +1,9 @@
+# overlay build output, and libtesla cloned into overlay/
+overlay/build/
+overlay/out/
+overlay/build-release/
+overlay/out-release/
+overlay/libtesla/
+overlay/*.ovl
+overlay/*.nacp
+overlay/*.elf
