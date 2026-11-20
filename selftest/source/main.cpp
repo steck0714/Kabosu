@@ -79,7 +79,7 @@ void RunSelfTest() {
         queue.push_back(NextPiece());
     Bag bag; // fresh bag, as it was before the queue was drawn
 
-    Thread thread;
+    LemonTea::Thread thread; // qualified: libnx also defines ::Thread
     if (!thread.start(board, PIECE_NONE, queue, bag, 0, 0, {DEFAULT_HEURISTIC()})) {
         out("FAIL: Thread::start\n");
         return;
