@@ -1,5 +1,9 @@
 # ライセンスの表示
 
+> [!NOTE]
+> このリポジトリは **PPT2NX-AI**（https://github.com/steck0714/PPT2NX-AI、steck0714）から派生したものです。AI の名前とリポジトリ名は今後変更する予定ですが、派生元の表記はそのまま残します。派生元の利用条件（ネット対戦での使用禁止、sysmodule の改変と改変物の配布の禁止、オーバーレイの GPL-2.0-or-later など）は、派生元の README.md と NOTICE.md を確認してください。名前が変わっても、派生元のコードを含む部分にはその条件が及びます。
+
+
 PPT2NX-AI は次のソフトウェアを使っています。
 
 ## Zetris
@@ -165,6 +169,34 @@ the Free Software Foundation, either version 2 of the License, or
 ```
 
 そのため、オーバーレイのソース（`overlay/` と `common/`）も GNU General Public License version 2 or later で公開しています。ライセンス文は [COPYING](COPYING) です。libtesla には stb_truetype（Sean Barrett、MIT またはパブリックドメイン）が含まれます。
+
+## lemon-tea-2
+
+テトリスの AI です。lemon-tea-2（https://github.com/citrus610/lemon-tea-2、citrus610）の `bot/` と `lib/avec.h`、`lib/hash.h` を `third_party/lemon-tea/` に取り込んでいます。取り込んだ版は upstream のコミット `edc3915b67863ed4c2fb10ad3fa218ac0a46889d`（2022-05-23）です。改変の内容は [third_party/lemon-tea/PATCHES.md](third_party/lemon-tea/PATCHES.md) にあります。ライセンス文は `third_party/lemon-tea/LICENSE` にも同じものがあり、このコードを複製するときは一緒に残してください。
+
+```
+MIT License
+
+Copyright (c) 2022 citrus610
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 ## devkitPro
 
