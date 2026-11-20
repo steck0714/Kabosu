@@ -1,11 +1,11 @@
-// ppt2-ai selftest
+// Kabosu selftest
 //
 // Runs the lemon-tea bot on a synthetic 7-bag piece sequence, headless, and
 // reports node count, search depth, wait time and memory use.
 // Goal: prove that the bot builds with devkitA64/libnx, that std::thread works,
 // and how fast it is on the real Switch CPU. It does NOT touch the game.
 //
-// Results are shown on screen and written to sdmc:/ppt2ai-selftest.txt.
+// Results are shown on screen and written to sdmc:/kabosu-selftest.txt.
 #include <switch.h>
 
 #include <chrono>
@@ -150,8 +150,8 @@ int main(int, char **) {
     PadState pad;
     padInitializeDefault(&pad);
 
-    g_log = fopen("sdmc:/ppt2ai-selftest.txt", "w");
-    out("ppt2-ai selftest\n\n");
+    g_log = fopen("sdmc:/kabosu-selftest.txt", "w");
+    out("Kabosu selftest\n\n");
 
     RunSelfTest();
 

@@ -1,4 +1,4 @@
-// PPT2NX-AI IPC client
+// Kabosu IPC client
 #pragma once
 #include "ppt2ai_ipc.h"
 

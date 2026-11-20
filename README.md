@@ -1,10 +1,10 @@
-# PPT2NX-AI
+# Kabosu
 
 Switch 版「ぷよぷよテトリス2」で、AIが対戦相手になります。最大2体まで同時に動作できます。
 より強い敵とswitch上で遊ぶことを目的としています。
 
 > [!NOTE]
-> このリポジトリは [PPT2NX-AI](https://github.com/steck0714/PPT2NX-AI)（steck0714）から派生したものです。AI の名前とリポジトリ名は今後変更する予定ですが、派生元の表記は残します。派生元の利用条件は派生元の README.md と NOTICE.md に従ってください。
+> このリポジトリは [PPT2NX-AI](https://github.com/steck0714/PPT2NX-AI)（steck0714）から派生したものです。AI の名前は Kabosu に変更しました（リポジトリ名は今後変更する予定です）。名前が変わっても派生元の表記は残します。派生元の利用条件は派生元の README.md と NOTICE.md に従ってください。
 
 > [!WARNING]
 > - 改造した Switch（Atmosphere）向けの非公式ツールです。自己責任で使用してください。
@@ -59,7 +59,7 @@ sysmodule（`atmosphere/contents/4200000050324149/`）について:
 
 ## 開発用: selftest
 
-`selftest/` は、lemon-tea の bot が devkitA64 と libnx でビルドでき、`std::thread` が Switch 上で動くかを確かめる単体の NRO です。ゲームには触れません。結果は画面と `sdmc:/ppt2ai-selftest.txt` に出ます。GitHub Actions（`.github/workflows/build.yml`）でビルドし、Artifacts から `.nro` を取れます。
+`selftest/` は、lemon-tea の bot が devkitA64 と libnx でビルドでき、`std::thread` が Switch 上で動くかを確かめる単体の NRO です。ゲームには触れません。結果は画面と `sdmc:/kabosu-selftest.txt` に出ます。GitHub Actions（`.github/workflows/build.yml`）でビルドし、Artifacts から `.nro` を取れます。
 
 ## ソースコード
 

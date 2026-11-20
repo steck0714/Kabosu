@@ -1,4 +1,4 @@
-// PPT2NX-AI Tesla overlay
+// Kabosu Tesla overlay
 #define TESLA_INIT_IMPL
 #include <tesla.hpp>
 #include <functional>
@@ -215,7 +215,7 @@ public:
     void update() override;
 
     tsl::elm::Element *createUI() override {
-        auto *frame = new tsl::elm::OverlayFrame("PPT2NX-AI", Version);
+        auto *frame = new tsl::elm::OverlayFrame("Kabosu", Version);
         auto *list = new tsl::elm::List();
         list->addItem(new tsl::elm::CustomDrawer([](tsl::gfx::Renderer *r, s32 x, s32 y, s32 w, s32 h) {
             if (g_sysmodule_version != 0) {
@@ -949,7 +949,7 @@ class MainGui : public tsl::Gui {
 public:
     tsl::elm::Element *createUI() override {
         ppt2aiGetStatus(&status_);
-        auto *frame = new tsl::elm::OverlayFrame("PPT2NX-AI", Version);
+        auto *frame = new tsl::elm::OverlayFrame("Kabosu", Version);
         auto *list = new tsl::elm::List();
 
         list->addItem(new tsl::elm::CustomDrawer([this](tsl::gfx::Renderer *r, s32 x, s32 y, s32 w, s32 h) {

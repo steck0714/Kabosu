@@ -1,4 +1,4 @@
-// IPC between the PPT2NX-AI sysmodule and the overlay.
+// IPC between the Kabosu sysmodule and the overlay.
 #pragma once
 #include <switch.h>
 

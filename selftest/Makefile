@@ -1,5 +1,5 @@
 #---------------------------------------------------------------------------------
-# ppt2-ai selftest (homebrew NRO). Standard devkitPro/libnx layout.
+# Kabosu selftest (homebrew NRO). Standard devkitPro/libnx layout.
 #---------------------------------------------------------------------------------
 .SUFFIXES:
 
@@ -10,11 +10,11 @@ endif
 TOPDIR ?= $(CURDIR)
 include $(DEVKITPRO)/libnx/switch_rules
 
-APP_TITLE   := ppt2-ai selftest
-APP_AUTHOR  := ppt2-ai
+APP_TITLE   := Kabosu selftest
+APP_AUTHOR  := Kabosu
 APP_VERSION := 0.0.1
 
-TARGET   := ppt2ai-selftest
+TARGET   := kabosu-selftest
 BUILD    := build
 SOURCES  := source ../third_party/lemon-tea/bot
 DATA     :=

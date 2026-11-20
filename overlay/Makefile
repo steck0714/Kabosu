@@ -9,7 +9,7 @@ endif
 TOPDIR ?= $(CURDIR)
 include $(DEVKITPRO)/libnx/switch_rules
 
-APP_TITLE	:=	PPT2NX-AI
+APP_TITLE	:=	Kabosu
 APP_AUTHOR	:=	mktm235
 APP_VERSION	:=	1.0.0
 
