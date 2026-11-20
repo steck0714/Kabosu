@@ -33,8 +33,15 @@ jobs:
       DEVKITPRO: /opt/devkitpro
     steps:
       - uses: actions/checkout@v4
+      # The devkitpro/devkita64 image already ships libnx. Only install it when it is
+      # missing, because pkg.devkitpro.org can answer 403 to CI runners.
       - name: Make sure libnx is installed
-        run: dkp-pacman -Sy --noconfirm --needed switch-dev
+        run: |
+          if [ -f "$DEVKITPRO/libnx/switch_rules" ]; then
+            echo "libnx already present"
+          else
+            dkp-pacman -Sy --noconfirm --needed switch-dev
+          fi
       - name: Build selftest
         run: make -C selftest
       - uses: actions/upload-artifact@v4
